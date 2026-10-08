@@ -20,10 +20,13 @@ The seeds were drawn at random before any run was played. The set includes every
 The data is attached to the [v1.0 release](https://github.com/shawnxu0913/sts2ai-runs/releases/tag/v1.0) as a single tarball, `trace95_bundle.tar`.
 
 ```
-manifest.jsonl                    one line per run
-traces/<SEED>/agent_actions.json.gz   every action in the run, with the game state after it
-traces/<SEED>/run_info.json           seed and character
+trace95_bundle/
+  manifest.jsonl                         one line per run
+  traces/<SEED>/agent_actions.json.gz    every action in the run, with the game state after it
+  traces/<SEED>/run_info.json            seed and character
 ```
+
+Unpack with `tar -xf trace95_bundle.tar`; paths below are relative to `trace95_bundle/`.
 
 ## manifest.jsonl
 
